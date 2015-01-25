@@ -1,25 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php require_once("../inc/config.php");
+$section = "extras";
+include("../inc/header.php");
 
-<HTML>
-<HEAD> 
-<meta name="Keywords" content="comedy, wig, humor, web series, webisodes, episodes, episodic, series, improv, male-female relationships, scottanddave, scottanddave.net, scott and dave, guy in a wig">
-<META name="author" content="David Rynn">
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" >
-
-
-<TITLE>Scotty and Davey's little Grotto of Goodiness</TITLE>
-<!--test-->
-<script type="text/javascript" src="highslide-full.js"></script> 
-<link rel="stylesheet" type="text/css" href="../css/highslide.css" /> 
-<!--[if lt IE 7]>
-<link rel="stylesheet" type="text/css" href="../css/highslide-ie6.css" />
-<![endif]--> 
-<!--
-    2) Optionally override the settings defined at the top
-    of the highslide.js file. The parameter hs.graphicsDir is important!
-    Add the slideshow and do some adaptations to this example.
---> 
- 
+?>
 <script type="text/javascript"> 
 //<![CDATA[
 hs.graphicsDir = '../highslide/graphics/';
@@ -133,36 +116,11 @@ hs.addEventListener(window, 'resize', function() {
 
 
 
-<!--end test -->
-        
-	<link href="css/style.css" rel=stylesheet type="text/css">
-        <style type="text/css" media="screen">
-           </style>
 
-
-</HEAD>
-
-<BODY>
-  <div id="wrapper">
-        
-        <div id="header">
-        </div>
-
-        <div id="navcontainer"> 
-
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="reviews.html">Rave Reviews!</a></li>
-                <li><a href="para.html">Gear</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="extras.html">Extras</a></li>         
-              </ul>
- 
-        </div>
 
 <div align="center">
 <i><a style="color: #0000ff"href="http://www.youtube.com/subscription_center?add_user=scottanddave"target="_blank">
-Click here</a> to subscribe to us on &nbsp; <img src="images/youtube_logo_standard_againstwhite-vfl95119[4].jpg" WIDTH="100" HEIGHT="30" align="bottom"></i>
+Click here</a> to subscribe to us on &nbsp; <img src="<?php echo BASE_URL; ?>images/youtube_logo_standard_againstwhite-vfl95119[4].jpg" WIDTH="100" HEIGHT="30" align="bottom"></i>
 <br>
 <h1>Alternate Takes!</h1> 
 <br>
@@ -204,37 +162,37 @@ Alternate Take: Intro
 	the anchor.
 --> 
  
-	<a id="thumb1" class='highslide' href='images/Fighting Image.JPG'
+	<a id="thumb1" class='highslide' href='<?php echo BASE_URL; ?>images/Fighting Image.JPG'
 			onclick="return hs.expand(this, inPageOptions)" title="First image"> 
-		<img src='images/Fighting.thumb.png' alt=''/></a> 
+		<img src='<?php echo BASE_URL; ?>images/Fighting.thumb.png' alt=''/></a> 
  
-	<a class='highslide' href='images/Postcard 2.JPG'
+	<a class='highslide' href='<?php echo BASE_URL; ?>images/Postcard 2.JPG'
 			onclick="return hs.expand(this, inPageOptions)" title="Postcard"> 
-		<img src='images/Postcard.thumb.202.png' alt=''/></a> 
+		<img src='<?php echo BASE_URL; ?>images/Postcard.thumb.202.png' alt=''/></a> 
  
-	<a class='highslide' href='images/v14.JPG'
+	<a class='highslide' href='<?php echo BASE_URL; ?>images/v14.JPG'
 			onclick="return hs.expand(this, inPageOptions)" title="version 14"> 
-		<img src='images/v14.png' alt=''/></a> 
+		<img src='<?php echo BASE_URL; ?>images/v14.png' alt=''/></a> 
  
-	<a class='highslide' href='images/Postcard 1.JPG'
+	<a class='highslide' href='<?php echo BASE_URL; ?>images/Postcard 1.JPG'
 			onclick="return hs.expand(this, inPageOptions)" title="Postcard 1"> 
-		<img src='images/Postcard.thumb.201.png' alt=''/></a> 
+		<img src='<?php echo BASE_URL; ?>images/Postcard.thumb.201.png' alt=''/></a> 
  
-        <a class='highslide' href='images/ScottSketchWig.jpg'
+        <a class='highslide' href='<?php echo BASE_URL; ?>images/ScottSketchWig.jpg'
 			onclick="return hs.expand(this, inPageOptions)" title="Thanks, Ron!"> 
-		<img src='images/ScottSketchWig.jpg' alt=''/></a> 
+		<img src='<?php echo BASE_URL; ?>images/ScottSketchWig.jpg' alt=''/></a> 
 
-        <a class='highslide' href='images/IMG00094.jpg'
+        <a class='highslide' href='<?php echo BASE_URL; ?>images/IMG00094.jpg'
 			onclick="return hs.expand(this, inPageOptions)" title="Scott trying out The Wig"> 
-		<img src='images/IMG00094.jpg' alt=''/></a> 
+		<img src='<?php echo BASE_URL; ?>images/IMG00094.jpg' alt=''/></a> 
 
-        <a class='highslide' href='images/IMG00132.jpg'
+        <a class='highslide' href='<?php echo BASE_URL; ?>images/IMG00132.jpg'
 			onclick="return hs.expand(this, inPageOptions)" title="On set with Scott"> 
-		<img src='images/IMG00132.jpg' alt=''/></a> 
+		<img src='<?php echo BASE_URL; ?>images/IMG00132.jpg' alt=''/></a> 
 
-        <a class='highslide' href='images/IMG00131.jpg'
+        <a class='highslide' href='<?php echo BASE_URL; ?>images/IMG00131.jpg'
 			onclick="return hs.expand(this, inPageOptions)" title="On set with retardo Scott"> 
-		<img src='images/IMG00131.jpg' alt=''/></a> 
+		<img src='<?php echo BASE_URL; ?>images/IMG00131.jpg' alt=''/></a> 
 
 
 

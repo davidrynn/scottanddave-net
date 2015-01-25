@@ -1,3 +1,27 @@
+/*boostrap over-rides*/
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+/* /bootstrap over-rides*/
+
 body {
 	background-color:#ffffff;	
 	font-family:"Lucida Grande","bitstream vera sans","trebuchet ms",verdana,arial;
@@ -14,40 +38,7 @@ body {
 	margin: 0 auto; 
 }
 
-#header {
-        background: url(wig.png) no-repeat top center;      
-        margin-top:2em;
-        padding-top:15.5em;
-        padding-bottom:2em;
-}
-    
 
-#navcontainer ul {
-        list-style-type: none;
-        padding-bottom:5em;
-
-        width: 44em; 
-        white-space:nowrap;
-}
-
-#navcontainer ul li { 
-        display: inline; 
-}
-
-#navcontainer ul li a {
-        font-size: 1.5em;
-	font-family:"Berlin Sans FB"
-        font-style: normal;
-        text-decoration: none;
-        padding: .7em;
-        color: #000000;
-        background-color: #FFFFFF;
-}
-
-#navcontainer ul li a:hover {
-        color: #707070;
-        background-color: #FFFFFF;
-}
 
 .eppsvideocontainer {  
         padding-bottom:2em;

@@ -1,43 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<HTML>
-<HEAD> 
-<meta "description" content="Comedy Shorts to fight soul crushing boredom.  Who knew the power of a guy in a wig?">
-<meta name="Keywords" content="comedy, wig, humor, web series, webisodes, episodes, episodic, series, improv, male-female relationships, scottanddave, scottanddave.net, scott and dave, guy in a wig">
-<meta name="author" content="David Rynn">
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" >
-
-
-<TITLE>Scott and Dave's comedy shorts to fight soul crushing boredom</TITLE>
-
-        
-	<link href="css/style.css" rel=stylesheet type="text/css">
-        <style type="text/css" media="screen">
-           </style>
-
-<STYLE>
-
-</STYLE>
-
-</HEAD>
-
-<BODY>
-  <div id="wrapper">
-        
-        <div id="header">
-        </div>
-
-        <div id="navcontainer"> 
-
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="reviews.html">Rave Reviews!</a></li>
-                <li><a href="para.html">Gear</a></li>
-                <li><a href="contact.html">Contact Us</a></li> 
-                <li><a href="extras.html">Extras</a></li>        
-              </ul>
- 
-        </div>
+<?php require_once("inc/config.php"); 
+$section="home";
+?>
+<?php include("inc/header.php") ?>
 
 &nbsp; &nbsp; &nbsp; 
 <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fhome.php%3F%23%21%2Fpages%2FScottandDavenet%2F136884819672750%3Fref%3Dts&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:75px; height:21px;" allowTransparency="true"></iframe>
@@ -45,7 +9,7 @@
 <i>Check out our <a style="color: #0000ff" href="http://www.facebook.com/pages/ScottandDavenet/136884819672750?v=wall&ref=ts""target="_blank">Facebook page</a>! </i>
 </div> 
 <br>
-
+<div align="center">
   <h2>The Wig Project: New Episode - Talent</h2>
 <object width="640" height="385"><param name="movie" value="http://www.youtube.com/v/Fof27OOKsIc?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Fof27OOKsIc?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object>
 </div>
@@ -122,13 +86,4 @@
 <object width="640" height="385"><param name="movie" value="http://www.youtube.com/v/GHQa-lBn-NY?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/GHQa-lBn-NY?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object>
  </div>
 
-<div id="footer">
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="images/88x31.png" /></a><br /><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/MovingImage" property="dc:title" rel="dc:type">The Wig Project</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="contact.html" property="cc:attributionName" rel="cc:attributionURL">David Rynn and Scott Miller</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 United States License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.scottanddave.net/contact.html" rel="cc:morePermissions">www.scottanddave.net</a>.
-<p>
-<a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="images/88x31.1.png" /></a><br /><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/StillImage" property="dc:title" rel="dc:type">The Wig Project Logo</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="contact.html" property="cc:attributionName" rel="cc:attributionURL">David Rynn</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0 United States License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.scottanddave.net/contact.html" rel="cc:morePermissions">www.scottanddave.net</a>
-
-</div>
-
-</body>
-</html>
+<?php include("inc/footer.php"); ?>

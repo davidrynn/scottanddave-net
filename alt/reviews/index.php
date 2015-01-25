@@ -1,39 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php require_once("../inc/config.php");
+$section = "reviews";
+include("../inc/header.php");
 
-<HTML>
-<HEAD> 
-<meta name="Keywords" content="comedy, wig, humor, web series, webisodes, episodes, episodic, series, improv, male-female relationships, scottanddave, scottanddave.net, scott and dave, guy in a wig">
-<META name="author" content="David Rynn">
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" >
-
-
-<TITLE>Scotty and Davey's little Grotto of Goodiness</TITLE>
-
-        
-	<link href="css/style.css" rel=stylesheet type="text/css">
-        <style type="text/css" media="screen">
-           </style>
-
-
-</HEAD>
-
-<BODY>
+?>
   <div id="wrapper">
-        
-        <div id="header">
-        </div>
 
-        <div id="navcontainer"> 
-
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="reviews.html">Rave Reviews!</a></li>
-                <li><a href="para.html">Gear</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="extras.html">Extras</a></li>         
-              </ul>
- 
-        </div>
 
 
 <p><big><i>"What are you doing with your life?"</i></p></big>
@@ -47,10 +18,10 @@
 </div>
 <br><br>
 <div align="center">
-<img src="images/fireworksbw2.jpg"><br>
+<img src="<?php echo BASE_URL; ?>images/fireworksbw2.jpg"><br>
 <big><p style="font-family:verdana;color:black">Check back for more rave reviews!!!</div>
 <br>
-<img src="images/blckwhtclipfirework.jpg"><br>
+<img src="<?php echo BASE_URL; ?>images/blckwhtclipfirework.jpg"><br>
 <br>
 <!--<p>Scott's Dad's customer care email: dadmiller@gmail.com<p> -->
 </div>
