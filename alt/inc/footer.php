@@ -6,13 +6,3 @@
 </h6>
 </footer>
 
-<script>
-// scroll up function
-// jQuery(function($){
-//     $('.fTab').on('click', function(){
-//         $(this).toggleClass('active');
-//     });
-// })
-</script>
-</body>
-</html>

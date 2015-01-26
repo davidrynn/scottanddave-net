@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta "description" content="Comedy Shorts to fight soul crushing boredom.  Who knew the power of a guy in a wig?">
+  <meta name="description" content="Comedy Shorts to fight soul crushing boredom.  Who knew the power of a guy in a wig?">
   <title>Scott and Dave's comedy shorts to fight soul crushing boredom</title>
 
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/normalize.css">
@@ -21,7 +21,7 @@
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse-1">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>

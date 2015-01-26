@@ -52,7 +52,7 @@ nav bar and boostrap customization and over-rides
 ************************************************/
 
 .navbar-default {
-    background: #fff;
+    background: transparent;
     border: none;
     padding: 35px 0;
 }
