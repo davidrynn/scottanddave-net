@@ -3,208 +3,134 @@ $section = "extras";
 include("../inc/header.php");
 
 ?>
-<script type="text/javascript"> 
-//<![CDATA[
-hs.graphicsDir = '../highslide/graphics/';
-hs.transitions = ['expand', 'crossfade'];
-hs.restoreCursor = null;
-hs.lang.restoreTitle = 'Click for next image';
- 
-// Add the slideshow providing the controlbar and the thumbstrip
-hs.addSlideshow({
-	//slideshowGroup: 'group1',
-	interval: 5000,
-	repeat: true,
-	useControls: true,
-	overlayOptions: {
-		position: 'bottom right',
-		offsetY: 50
-	},
-	thumbstrip: {
-		position: 'above',
-		mode: 'horizontal',
-		relativeTo: 'expander'
-	}
-});
- 
-// Options for the in-page items
-var inPageOptions = {
-	//slideshowGroup: 'group1',
-	outlineType: null,
-	allowSizeReduction: false,
-	wrapperClassName: 'in-page controls-in-heading',
-	thumbnailId: 'gallery-area',
-	useBox: true,
-	width: 600,
-	height: 400,
-	targetX: 'gallery-area 10px',
-	targetY: 'gallery-area 10px',
-	captionEval: 'this.a.title',
-	numberPosition: 'caption'
-}
- 
-// Open the first thumb on page load
-hs.addEventListener(window, 'load', function() {
-	document.getElementById('thumb1').onclick();
-});
- 
-// Cancel the default action for image click and do next instead
-hs.Expander.prototype.onImageClick = function() {
-	if (/in-page/.test(this.wrapper.className))	return hs.next();
-}
- 
-// Under no circumstances should the static popup be closed
-hs.Expander.prototype.onBeforeClose = function() {
-	if (/in-page/.test(this.wrapper.className))	return false;
-}
-// ... nor dragged
-hs.Expander.prototype.onDrag = function() {
-	if (/in-page/.test(this.wrapper.className))	return false;
-}
- 
-// Keep the position after window resize
-hs.addEventListener(window, 'resize', function() {
-	var i, exp;
-	hs.getPageSize();
- 
-	for (i = 0; i < hs.expanders.length; i++) {
-		exp = hs.expanders[i];
-		if (exp) {
-			var x = exp.x,
-				y = exp.y;
- 
-			// get new thumb positions
-			exp.tpos = hs.getPosition(exp.el);
-			x.calcThumb();
-			y.calcThumb();
- 
-			// calculate new popup position
-		 	x.pos = x.tpos - x.cb + x.tb;
-			x.scroll = hs.page.scrollLeft;
-			x.clientSize = hs.page.width;
-			y.pos = y.tpos - y.cb + y.tb;
-			y.scroll = hs.page.scrollTop;
-			y.clientSize = hs.page.height;
-			exp.justify(x, true);
-			exp.justify(y, true);
- 
-			// set new left and top to wrapper and outline
-			exp.moveTo(x.pos, y.pos);
-		}
-	}
-});
-//]]>
-</script> 
- 
-<!--
-	3) Modify some of the styles
---> 
-<style type="text/css"> 
-	.highslide-image {
-		border: 1px solid black;
-	}
-	.highslide-controls {
-		width: 90px !important;
-	}
-	.highslide-controls .highslide-close {
-		display: none;
-	}
-	.highslide-caption {
-		padding: .5em 0;
-	}
-</style> 
 
-
-
-
-
-<div align="center">
 <i><a style="color: #0000ff"href="http://www.youtube.com/subscription_center?add_user=scottanddave"target="_blank">
 Click here</a> to subscribe to us on &nbsp; <img src="<?php echo BASE_URL; ?>images/youtube_logo_standard_againstwhite-vfl95119[4].jpg" WIDTH="100" HEIGHT="30" align="bottom"></i>
-<br>
+
 <h1>Alternate Takes!</h1> 
-<br>
-<big>
-Alternate Take: Park Run 
-<br>
+
+<div class="videocontainer">
+<h4>Alternate Take: Park Run </h4>
 <object width="355" height="225"><param name="movie" value="http://www.youtube.com/v/i-QJJnVRIcI&amp;hl=en_US&amp;fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/i-QJJnVRIcI&amp;hl=en_US&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="355" height="225"></embed></object>
-<br>
-<br>
-Alternate Take: Brita
-<br>
+</div>
+
+<div class="videocontainer">
+<h4>Alternate Take: Brita</h4>
 <object width="355" height="225"><param name="movie" value="http://www.youtube.com/v/lUS2w29JQV8&amp;hl=en_US&amp;fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/lUS2w29JQV8&amp;hl=en_US&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="355" height="225"></embed></object>
-<br>
-<br>
-Alternate Take: Intro
-<br>
-</big>
+</div>
+
+<div class="videocontainer">
+<h4>Alternate Take: Intro</h4>
 <object width="355" height="225"><param name="movie" value="http://www.youtube.com/v/3h1imnDcfwI?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/3h1imnDcfwI?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="355" height="225"></embed></object>
-<br>
+</div>
 
 <h1>Behind the Scenes Pictures and Alternate Logos!</h1>
 
-<!--
-	4)	Div where the gallery appears
---> 
- 
-<div id="gallery-area" style="width: 620px; height: 520px; margin: 0 auto; border: 1px solid silver"> 
- 
-<!--
-	5)	Put all the thumbnails inside a hidden div where Highslide can index them to
-		create the slideshow.
---> 
- 
-<div class="hidden-container"> 
-<!--
-	6) This is how you mark up the thumbnail images with an anchor tag around it.
-	The anchor's href attribute defines the URL of the full-size image. Given the captionEval
-	option is set to 'this.a.title', the caption is grabbed from the title attribute of
-	the anchor.
---> 
- 
-	<a id="thumb1" class='highslide' href='<?php echo BASE_URL; ?>images/Fighting Image.JPG'
-			onclick="return hs.expand(this, inPageOptions)" title="First image"> 
-		<img src='<?php echo BASE_URL; ?>images/Fighting.thumb.png' alt=''/></a> 
- 
-	<a class='highslide' href='<?php echo BASE_URL; ?>images/Postcard 2.JPG'
-			onclick="return hs.expand(this, inPageOptions)" title="Postcard"> 
-		<img src='<?php echo BASE_URL; ?>images/Postcard.thumb.202.png' alt=''/></a> 
- 
-	<a class='highslide' href='<?php echo BASE_URL; ?>images/v14.JPG'
-			onclick="return hs.expand(this, inPageOptions)" title="version 14"> 
-		<img src='<?php echo BASE_URL; ?>images/v14.png' alt=''/></a> 
- 
-	<a class='highslide' href='<?php echo BASE_URL; ?>images/Postcard 1.JPG'
-			onclick="return hs.expand(this, inPageOptions)" title="Postcard 1"> 
-		<img src='<?php echo BASE_URL; ?>images/Postcard.thumb.201.png' alt=''/></a> 
- 
-        <a class='highslide' href='<?php echo BASE_URL; ?>images/ScottSketchWig.jpg'
-			onclick="return hs.expand(this, inPageOptions)" title="Thanks, Ron!"> 
-		<img src='<?php echo BASE_URL; ?>images/ScottSketchWig.jpg' alt=''/></a> 
+<!-- bootstrap carousel -->
+<div class="container">
 
-        <a class='highslide' href='<?php echo BASE_URL; ?>images/IMG00094.jpg'
-			onclick="return hs.expand(this, inPageOptions)" title="Scott trying out The Wig"> 
-		<img src='<?php echo BASE_URL; ?>images/IMG00094.jpg' alt=''/></a> 
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+  </ol>
 
-        <a class='highslide' href='<?php echo BASE_URL; ?>images/IMG00132.jpg'
-			onclick="return hs.expand(this, inPageOptions)" title="On set with Scott"> 
-		<img src='<?php echo BASE_URL; ?>images/IMG00132.jpg' alt=''/></a> 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
 
-        <a class='highslide' href='<?php echo BASE_URL; ?>images/IMG00131.jpg'
-			onclick="return hs.expand(this, inPageOptions)" title="On set with retardo Scott"> 
-		<img src='<?php echo BASE_URL; ?>images/IMG00131.jpg' alt=''/></a> 
+    <div class="item active">
+      <img src="<?php echo BASE_URL; ?>images/Fighting Image.JPG" alt="test logo 1">
+      <div class="carousel-caption">
+        <h4>Earlier attempt at logo</h4>
+      </div>
+    </div>
 
 
+    <div class="item">
+      <img src="<?php echo BASE_URL; ?>images/Postcard 2.JPG" alt="postcard">
+      <div class="carousel-caption"> 
+       <h4>Postcard</h4>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="<?php echo BASE_URL; ?>images/v14.JPG" alt="Another Version">
+      <div class="carousel-caption">
+      	<h4>Version 14</h4>
+      </div>
+    </div>
+
+     <div class="item">
+      <img src="<?php echo BASE_URL; ?>images/Postcard 1.JPG" alt="Postcard 1">
+      <div class="carousel-caption">
+
+       <h4>Postcard 1</h4>
+      </div>
+    </div>
+
+     <div class="item">
+      <img src="<?php echo BASE_URL; ?>images/ScottSketchWig.jpg" alt="sketch of wig">
+      <div class="carousel-caption">
+      	<h4>Thanks for the sketch, Ron!</h4>
+      </div>
+    </div>
+
+        <div class="item">
+      <img src="<?php echo BASE_URL; ?>images/IMG00094.jpg" alt="trying wig on">
+      <div class="carousel-caption">
+
+        <h4>Scott trying out The Wig</h4>
+      </div>
+    </div>
 
 
-</div> 
- 
-</div> <br>
-<h1>More on Scott and Dave</h1>
-<div align="center">
-<a style="color: #0000ff"href="http://www.s-miller.com/"target="_blank">Scott's Website</a> 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-<a style="color: #0000ff"href="http://www.davidrynn.com/"target="_blank">David's Website</a>
+        <div class="item">
+      <img src="<?php echo BASE_URL; ?>images/IMG00132.jpg" alt="on set">
+      <div class="carousel-caption">
+
+        <h4>On set with Scott</h4>
+      </div>
+    </div>
+
+        <div class="item">
+      <img src="<?php echo BASE_URL; ?>images/IMG00131.jpg" alt="on set 2">
+      <div class="carousel-caption">
+
+        <h4>On set with retardo Scott</h4>
+      </div>
+    </div>    
+  </div><!--/carousel inner -->
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div><!-- /bootsrap carousel -->
+
+
+
+
+
+<div class="extras row">
+	<h1>More on Scott and Dave</h1>
+	<div class="col-sm-6">
+		<a style="color: #0000ff"href="http://www.s-miller.com/"target="_blank">Scott's Website</a> 
+	</div>
+	<div class="col-sm-6">
+		<a style="color: #0000ff"href="http://www.davidrynn.com/"target="_blank">David's Website</a>
+	</div>
 </div>
-<br>
-<br>
+</div><!-- /container -->
+<?php include(ROOT_PATH . "inc/footer.php"); ?>

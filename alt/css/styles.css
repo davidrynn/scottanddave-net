@@ -1,24 +1,60 @@
 body {
     background-color:#ffffff;   
-    font-family:"Lucida Grande","bitstream vera sans","trebuchet ms",verdana,arial;     
+    font-family:"Lucida Grande","bitstream vera sans","trebuchet ms",verdana,arial;  
+    text-align: center;   
 
 }
 
+h2, h3, h4 {
+    font-family: "times";
+    font-weight: 900;
+}
+img {
+    display: block;
+    margin: auto;
+}
 
+.videocontainer {
+    padding: 20px;
+}
 
+.reviews {
+    padding: 25px;
+}
+.reviews  h3 {
+    font-style: italic;
+}
 
-/*logo*/
+.reviews  h4 {
+    font-family: verdana;
+    font-weight: 400;
+    margin-left: 300px;
+}
+
+a {
+    color: #00f;
+}
+/***************
+logo
+****************/
+
  #logo-main {
     display: block;
     margin: 35px auto;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
 }
 /*/logo*/
-/*boostrap over-rides*/
+
+/************************************************
+nav bar and boostrap customization and over-rides
+************************************************/
 
 .navbar-default {
     background: #fff;
     border: none;
-    padding-top: 35px;
+    padding: 35px 0;
 }
 
 .navbar-default .navbar-nav {
@@ -52,10 +88,67 @@ color: inherit;
 
 }
 
+.carousel-caption > h4 {
+    color:#777;
+}
+
  /*/bootstrap over-rides */
 
+
+.extras.row {
+    padding: 30px;
+}
+ /****************
+ Footer styling
+ ****************/
+
+footer {
+    color: #fff;
+    background: #222;
+}
+
+ /*slide up styling
+
+ footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 0px;
+    height: 300px;
+    background-color: #fff;
+    -webkit-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+}
+
+
+
+.fTab {
+     position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 1em;
+    background-color: gray;
+    
+    -webkit-transition: bottom 0.5s;
+    transition: bottom 0.5s;
+}
+
+.fTab.active {
+    bottom: 300px;
+}
+
+.fTab.active + footer {
+    max-height: 300px;
+}*/
+
+/*end footer*****
+*****************/
+
+
+
 /*old terrible css follows... needs tweaking*/
-#wrapper { 
+/*#wrapper { 
     width: 51em;  
     margin: 0 auto; 
 }
@@ -140,6 +233,6 @@ margin-bottom:20px;
 
 img.middle{
 vertical-align:text-middle;
-}
+}*/
 
 /*end of old terrible css*/
