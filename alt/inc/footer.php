@@ -1,8 +1,17 @@
 
 
-<footer>
+<div class="footer">
+			<div class="wrapper">
+
+			<ul>		
+				<li><a href="https://twitter.com/scottanddave"><img src="<?php echo BASE_URL; ?>images/Twitter_logo_blue.png"></a></li>
+				<li><a href="https://www.facebook.com/scottanddave.net"><img src="<?php echo BASE_URL; ?>images/FB-f-Logo__blue_29.png"></a></li>
+			</ul>
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>			
+			<p>&copy;<?php echo date('Y'); ?> Scott and Dave</p>
+
+			</div>
 	
-<h6><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/MovingImage" property="dc:title" rel="dc:type">The Wig Project</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="contact.html" property="cc:attributionName" rel="cc:attributionURL">David Rynn and Scott Miller</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 United States License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.scottanddave.net/contact.html" rel="cc:morePermissions">www.scottanddave.net</a><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="<?php echo BASE_URL; ?>images/88x31.png" /></a>
-</h6>
-</footer>
+
+</div>
 

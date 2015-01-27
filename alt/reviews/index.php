@@ -19,8 +19,8 @@ include("../inc/header.php");
 </div>
 
 <div class="reviews">
-	<h3>"Best Actor in a Web Comedy Series"</h3>
-	<h4> -LA Webfest... no seriously, Scott one best actor... really!</h4>
+	<h3>"Outstanding Lead Actor in a Comedy Series"</h3>
+	<h4> -2011 LA Webfest... no seriously, Scott won Outstanding Lead Actor... really!</h4>
 </div>
 <div>
 	<img src="<?php echo BASE_URL; ?>images/fireworksbw2.jpg"><br>

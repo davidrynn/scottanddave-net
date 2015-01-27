@@ -1,8 +1,11 @@
+<?php 
+$section=""; ?>
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Comedy Shorts to fight soul crushing boredom.  Who knew the power of a guy in a wig?">
   <title>Scott and Dave's comedy shorts to fight soul crushing boredom</title>
 

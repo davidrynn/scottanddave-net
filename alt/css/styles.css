@@ -50,30 +50,48 @@ logo
 /************************************************
 nav bar and boostrap customization and over-rides
 ************************************************/
+@media screen and (min-width: 768px){
+    
+    .navbar-default {
+        background: transparent;
+        border: none;
+        padding: 35px 0;
+    }
 
-.navbar-default {
-    background: transparent;
-    border: none;
-    padding: 35px 0;
+    .navbar-default .navbar-nav {
+        width: 100%;
+        text-align: center;
+
+    }
+    .navbar-default .navbar-nav li {
+        display: inline-block;
+        float: none;
+
+
+    }
+    .navbar-default .navbar-nav li a {
+        font-size: 1.7em;
+        padding: 15px 15px;
+        color: #000;
+        font-weight: bolder;
+        border-radius: 7px;
+    }
 }
 
-.navbar-default .navbar-nav {
-    width: 100%;
-    text-align: center;
 
+.navbar-toggle {
+    float: center;
 }
-.navbar-default .navbar-nav li {
-    display: inline-block;
-    float: none;
+.navbar-toggle .icon-bar {
+width:140px;
 
 
 }
+
+
 .navbar-default .navbar-nav li a {
-    font-size: 1.7em;
-    padding: 15px 15px;
     color: #000;
     font-weight: bolder;
-    border-radius: 7px;
 }
 
 /*Sets the text hover color on navbar*/
@@ -92,6 +110,8 @@ color: inherit;
     color:#777;
 }
 
+
+
  /*/bootstrap over-rides */
 
 
@@ -102,137 +122,32 @@ color: inherit;
  Footer styling
  ****************/
 
-footer {
+.footer {
     color: #fff;
     background: #222;
+    padding: 42px 0;
+    font-size: 12px;
+    color: #a5a5a5;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.footer ul {margin: 0; padding: 0; float: left;}
+.footer ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    text-transform: lowercase;
 }
 
- /*slide up styling
+.footer ul li:after {content:" | "}
+.footer ul li:last-child:after {content:"";}
+.footer p {margin: 0; text-align: right; padding-right: 3px;}
+.footer a {text-decoration: none; color: #539def; margin: 0 10px;}
+.footer li:first-child a {margin-left: 4px;}
+.footer a:hover, .footer a:active {text-decoration: underline;}
 
- footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-height: 0px;
-    height: 300px;
-    background-color: #fff;
-    -webkit-transition: max-height 0.5s;
-    transition: max-height 0.5s;
+ul>li>a>img {
+    display: inline-block;
+    width:15px;
+    height:15px;
 }
-
-
-
-.fTab {
-     position: fixed;
-    left: 0;
-    bottom: 0;
-    padding: 1em;
-    background-color: gray;
-    
-    -webkit-transition: bottom 0.5s;
-    transition: bottom 0.5s;
-}
-
-.fTab.active {
-    bottom: 300px;
-}
-
-.fTab.active + footer {
-    max-height: 300px;
-}*/
-
-/*end footer*****
-*****************/
-
-
-
-/*old terrible css follows... needs tweaking*/
-/*#wrapper { 
-    width: 51em;  
-    margin: 0 auto; 
-}
-
-
-
-.eppsvideocontainer {  
-        padding-bottom:2em;
-        background: url(neweps.1.png) no-repeat left;
-width: 44em;
- 
-        font-family:"times";
-        font-size: 1.2em;
-
-} 
-
-.videocontainer {  
-width: 44em;
-font-family:"times";
-        font-size: 1.2em;
-        padding-bottom:2em;
-} 
-
-
-h2 {
-
-       font-family:"times";
-        font-size: 1.2em;
-        font-weight: 900;
-}
-
-
-
-#gear {
-text-decoration: none;
-vertical-align:text-middle;
-}
-#gear ul
-{
-margin: 0;
-padding: 0;
-list-style-type: none;
-vertical-align:text-middle;
-}
-
-#gear li.shirt
- { 
-      background-image: url(TBlackWhite.jpg);
-background-repeat: no-repeat;
-background-position: 0px 5px; 
-padding-left: 14px;
-
-vertical-align:text-middle;
-left-margin: 2em; 
-}
-
-#gear a
-{
-vertical-align:text-middle;
-display: block;
-    color: #000000;
-    background-color: #FFFFFF;
-width: 50em;
-padding: .2em .8em;
-text-color: #000000;
-text-decoration: none;
-}
-
-#gear a:hover
-{
-color: #707070;
-background-color: #FFFFFF;
-}
-
-#footer {
-        font-size: 10px;
-text-align: left;
-white-space:nowrap;
-margin-top:50px;
-margin-bottom:20px;
-}
-
-img.middle{
-vertical-align:text-middle;
-}*/
-
-/*end of old terrible css*/
