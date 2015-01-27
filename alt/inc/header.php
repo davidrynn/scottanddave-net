@@ -1,5 +1,3 @@
-<?php 
-$section=""; ?>
 <!DOCTYPE html>
 <html>
 <head>
